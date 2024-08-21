@@ -1,0 +1,303 @@
+header{
+  padding: 10px;
+  padding-bottom: 0px;
+  border-bottom: 2px solid  black;
+  background: rgb(22,22,195);
+  background: linear-gradient(90deg, rgba(22,22,195,1) 47%, rgba(0,212,255,1) 100%);
+  color: white;
+}
+.nav-div{
+  display: flex;
+}
+.nav-child{
+  margin: 0 63px;
+  width: 50%;
+  height: 50px;
+  font-size: x-large;
+  cursor: pointer;
+}
+.nav-child:hover {
+  color: rgb(221, 171, 255);
+  font-weight: bolder;
+}
+
+.nav-child:active {
+  color: white;
+}
+
+
+.d-flex {
+    display: flex;
+  }
+  
+  .sidebar {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 300px; /* Set a fixed width for the sidebar */
+    height: 1950px;
+    padding: 20px; /* Add padding as needed */
+    border-right: 1px solid #ddd; /* Add a border to separate it from content */
+    background: rgb(52, 207, 239);
+    /* position: sticky;
+    top: 0; 
+    overflow-y: auto; */
+  }
+  
+  .sidebar h4 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  .checkbox-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  .checkbox-label:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .checkbox-label input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox-label input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkbox-label .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .checkbox-label:hover {
+    color: #007bff; /* Change label color on hover */
+    font-weight: bold; /* Make label bold on hover */
+  }
+  
+  
+/*.checkbox-group label {
+
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.checkbox-group input {
+  margin-right: 5px;
+}
+
+.checkbox-group input:checked + span {
+  color: #2980b9;
+}
+
+.checkbox-group span {
+  transition: color 0.3s;
+} */
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #3498db;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #2980b9;
+    color: #ffffff;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+  }
+  
+  .download-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+  
+  /* Additional styles for the button (you can customize) */
+  .download-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  header h1{
+    margin-bottom: 20px;
+  }
+
+  .nav-child.active {
+    background-color: #007bff; /* Change this to the desired background color */
+    color: #fff; /* Change this to the desired text color */
+  }
+/* Add this CSS to your existing stylesheet */
+
+/* Project 3 styling */
+.project3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 2px solid #096eda;
+  width: 500px;
+  height: 890px;
+  margin-left: 505px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  box-shadow:#3c9bdb 0px 20px 30px -10px;
+}
+
+
+.form-input {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-input input:focus{
+   border-color:#007bff 
+}
+
+.form-input label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.form-input label:hover{
+  font-weight: bold;
+}
+
+.form-input input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-input select{
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.form-input select:focus{
+  border-color:#007bff;
+}
+
+.form-input button {
+  position: relative;
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 30px;
+  text-align: center;
+  width: 100%;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgba(0,212,255,1);
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid rgba(0,212,255,1);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 rgba(0,212,255,1)1;
+}
+
+.form-input button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 rgba(0,212,255,1);
+}
+
+.project4-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 2px solid #0b68cb;
+  width: 500px;
+  height: 730px;
+  margin-left: 520px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow:#3c9bdb 0px 20px 30px -10px;
+}
+.form-input {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-input input:focus{
+  outline-color:#007bff 
+}
+
+.form-input label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+
+
+
+
+
